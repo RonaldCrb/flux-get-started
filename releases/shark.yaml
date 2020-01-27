@@ -2,20 +2,15 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: octopus
+  name: shark
   namespace: flux-demo
   annotations:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: glob:3.1.1-debian-9-*
 spec:
-  releaseName: octopus
+  releaseName: shark
   chart:
     git: ssh://git@github.com/ronaldcrb/flux-get-started
     ref: master
-    path: charts/octopus
+    path: charts/shark
   
-
-
-helm upgrade -i flux /flux \
---set git.url=git@github.com:YOURUSER/flux-get-started \
---namespace flux 
