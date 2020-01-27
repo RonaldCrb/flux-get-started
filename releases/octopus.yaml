@@ -12,10 +12,4 @@ spec:
   chart:
     git: ssh://git@github.com/ronaldcrb/flux-get-started
     ref: master
-    path: charts/octopus
-  
-
-
-helm upgrade -i flux /flux \
---set git.url=git@github.com:YOURUSER/flux-get-started \
---namespace flux 
+    path: charts/octopus-chart

@@ -12,5 +12,5 @@ spec:
   chart:
     git: ssh://git@github.com/ronaldcrb/flux-get-started
     ref: master
-    path: charts/shark
+    path: charts/shark-chart
   
